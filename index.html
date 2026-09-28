@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Entrega 9: Asincronismo y Promesas</title>
+    <link rel="stylesheet" href="styles.css">
+   <script src="js/main.js"defer></script>
+</head>
+<body>
+
+    
+    <div id="banner-asincrono" class="banner hidden"></div>
+    
+    
+    <div id="notificacion-estado" class="notificacion hidden"></div>
+
+    <h1>🛒 Simulador Interactivo con Asincronismo</h1>
+    <p>Los datos persisten. El sistema ahora procesa información asíncrona y es tolerante a errores.</p>
+
+    <div class="grid-tienda">
+        
+        <div class="panel">
+            <h2>Productos Disponibles</h2>
+            <div id="catalogo-productos">
+                <div class="producto-tarjeta">
+                    <p>💻 Laptop Premium</p>
+                    <button id="btn-add-1">Agregar ($1200)</button>
+                </div>
+                <div class="producto-tarjeta">
+                    <p>📱 Smartphone Pro</p>
+                    <button id="btn-add-2">Agregar ($800)</button>
+                </div>
+                <div class="producto-tarjeta">
+                    <p>🎧 Auriculares Bluetooth</p>
+                    <button id="btn-add-3">Agregar ($150)</button>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="panel">
+            <h2>Tu Carrito de Compras</h2>
+            <div id="contenedor-carrito"></div>
+            
+            <div class="totales">
+                <p>Total artículos: <span id="total-items">0</span></p>
+                <p>Total a pagar: <strong>$<span id="total-dinero">0</span></strong></p>
+            </div>
+            <button id="btn-vaciar-carrito" class="btn-eliminar" style="width: 100%; margin-top: 10px; padding: 12px;">🗑️ Vaciar Todo el Carrito</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
